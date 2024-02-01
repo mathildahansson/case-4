@@ -16,14 +16,25 @@
 
     <div class="container">
 
-        <h1>Lorem, ipsum dolor.</h1>
 
-            <input type="text" placeholder="What are you looking for?">
-            <br>
-            <button type="submit">Search!</button>
+
+        <h1>Lorem, ipsum dolor.</h1>
 
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga blanditiis exercitationem, perspiciatis
             quaerat aperiam porro molestiae ab iusto repellendus pariatur?</p>
+
+        <form id="searchForm" onsubmit="handleSearch(event)">
+            <input type="text" name="searchInput" id="searchInput" placeholder="Search here...">
+            <button type="submit">Search!</button>
+        </form>
+
+
+
+
+        <h2>Searchresult</h2>
+        <div id="result-card">...</div>
+
+
 
 
     </div>
