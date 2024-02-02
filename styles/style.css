@@ -15,11 +15,11 @@ header {
     height: 150px;
 }
 
-.container {
-    background-color: #cccccc;
+#container {
+    background-color: #bb927c;
     padding: 1rem;
-    margin: 1.5rem;
-    border-radius: 10px;
+    border-radius: 50px 50px 0px 0px;
+
 }
 
 h1 {
@@ -28,11 +28,49 @@ h1 {
     text-align: center;
 }
 
+
+#box {
+    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; */
+    /* padding: 1rem; */
+    margin-bottom: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 4px 12px;
+    margin-top: 1.5rem;
+    border-radius: 15px 15px 15px 15px;
+}
+
+#box-header {
+    padding: 1rem;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#box-info {
+    padding: 1rem;
+    background-color: #f1f1f1;
+}
+
 p {
     font-weight: 300;
     font-size: 14px;
 }
 
+#id {
+    background-color: black;
+    padding: 0.4rem;
+    border-radius: 30px;
+    color: white;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+
+#rover-photos {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
 
 input {
     max-width: 100%;
@@ -48,9 +86,7 @@ button {
     margin: 0.5rem;
 }
 
-#result-card {
-    background-color: red;
-}
+
 
 footer {
     position: absolute;
