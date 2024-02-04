@@ -12,8 +12,23 @@
 
     <h1>Nasa API</h1>
 
-    <div id="container"></div>
-  
+    <form id="searchForm">
+        <input type="text" name="searchInput" id="input" placeholder="Search...">
+        <br>
+        <button type="submit" id="searchButton">Search!</button>     
+
+        <label for="cameras">Camera:</label>
+
+<select name="cameras" id="cameras">
+  <option value="camera">Camera</option>
+  <option value="camera">Camera</option>
+  <option value="camera">Camera</option>
+  <option value="camera">Camera</option>
+</select>
+    </form>
+
+    <div id="display-data"></div>
+
 
     <script src="script.js"></script>
 </body>
