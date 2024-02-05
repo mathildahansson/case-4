@@ -15,27 +15,34 @@ body {
 nav {
     padding: 2rem;
     text-align: center;
-    /* background-image: url(); */
+    background-image: url(/assets/images/space-background.jpg);
+    background-size: cover;
     background-color: #999999;
 }
 
 header {
     background-color: #646464;
+    padding: 1rem 2rem 1rem 2rem;
+    text-align: center;
+}
 
+#p-header {
+    margin-bottom: 1.5rem;
 }
 
 #display-data {
-    background-color: #999999;
+    background-color: #cccccc;
+    min-height: 100%;
     padding: 1rem;
-
-
 }
 
 h1 {
+    color: #f1f1f1;
     font-size: 28px;
     font-weight: 800;
     text-align: center;
-    padding: 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 h3 {
@@ -43,21 +50,9 @@ h3 {
     font-size: 24px;
 }
 
-
-
 p {
     font-weight: 300;
     font-size: 14px;
-}
-
-#id {
-    background-color: black;
-    padding: 0.4rem;
-    border-radius: 30px;
-    color: white;
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
 }
 
 #apod-img {
@@ -65,22 +60,46 @@ p {
 }
 
 #searchForm {
-    background-color: #646464;
+    background-color: #f1f1f1;
     padding: 2rem;
-    display: flex;
+    text-align: center;
+}
+
+#dateSearch,
+#searchButton {
     justify-content: center;
     align-items: center;
+    text-align: center;
+    width: 80%;
+    padding: 0.7rem;
+    margin: 0.5rem;
+    border-radius: 1rem;
 }
 
-#input, #searchButton {
-    padding: 0.5rem;
+#dateSearch {
+    border: 2px solid black;
 }
+
+#searchButton {
+    border: 2px solid black;
+
+}
+
+label {
+    font-weight: 600;
+}
+
+
+
+
 
 footer {
-    position: absolute;
+    position: fixed;
+    padding: 2rem;
+    left: 0;
     bottom: 0;
     width: 100%;
     background-color: #646464;
-    height: 130px;
+    color: #f1f1f1;
     text-align: center;
 }

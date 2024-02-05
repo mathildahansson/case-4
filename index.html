@@ -16,17 +16,24 @@
 
     <header>
         <h1>Astronomy Picture of the Day!</h1>
+        <p id="p-header">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae modi dicta necessitatibus fugit ullam enim,
+            laborum minima suscipit amet veniam?</p>
     </header>
 
 
-
-    <form id="searchForm">
-        <input type="text" name="input" id="input" placeholder="Search by date...">
+    <form id="searchForm" onsubmit="handleSearch(event)">
+        <label for="dateSearch">Search for a date:</label>
+        <input type="text" id="dateSearch" name="dateSearch" placeholder="YYYY-MM-DD">
         <br>
         <button type="submit" id="searchButton">Search!</button>
     </form>
 
+    <!-- I denna DIV hamnar sökresultatet -->
     <div id="display-data"></div>
+
+    <footer>
+        <p>Copyright 2024 - Mathilda Hansson</p>
+    </footer>
 
     <script src="apod.js"></script>
 </body>
