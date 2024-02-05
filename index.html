@@ -4,33 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NASA API</title>
+    <title>APOD</title>
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
 
-    <h1>Nasa API</h1>
+    <nav>
+        <h3>NASA API</h3>
+    </nav>
+
+    <header>
+        <h1>Astronomy Picture of the Day!</h1>
+    </header>
+
+
 
     <form id="searchForm">
-        <input type="text" name="searchInput" id="input" placeholder="Search...">
+        <input type="text" name="input" id="input" placeholder="Search by date...">
         <br>
-        <button type="submit" id="searchButton">Search!</button>     
-
-        <label for="cameras">Camera:</label>
-
-<select name="cameras" id="cameras">
-  <option value="camera">Camera</option>
-  <option value="camera">Camera</option>
-  <option value="camera">Camera</option>
-  <option value="camera">Camera</option>
-</select>
+        <button type="submit" id="searchButton">Search!</button>
     </form>
 
     <div id="display-data"></div>
 
-
-    <script src="script.js"></script>
+    <script src="apod.js"></script>
 </body>
 
 </html>

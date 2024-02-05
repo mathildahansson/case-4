@@ -12,16 +12,22 @@ body {
     min-height: 100vh;
 }
 
+nav {
+    padding: 2rem;
+    text-align: center;
+    /* background-image: url(); */
+    background-color: #999999;
+}
+
 header {
     background-color: #646464;
-    height: 150px;
+
 }
 
 #display-data {
-    /* background-color: #675c56; */
     background-color: #999999;
     padding: 1rem;
-    border-radius: 50px 50px 0px 0px;
+
 
 }
 
@@ -29,31 +35,15 @@ h1 {
     font-size: 28px;
     font-weight: 800;
     text-align: center;
+    padding: 2rem;
+}
+
+h3 {
+    color: #f1f1f1;
+    font-size: 24px;
 }
 
 
-#box {
-    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; */
-    /* padding: 1rem; */
-    width: 100%;
-    margin-bottom: 1rem;
-    box-shadow: rgba(0, 0, 0, 0.5) 0px 4px 12px;
-    margin-top: 1.5rem;
-    align-items: center;
-}
-
-#box-header {
-    padding: 1rem;
-    background-color: #f1f1f1;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#box-info {
-    padding: 1rem;
-    background-color: #f1f1f1;
-}
 
 p {
     font-weight: 300;
@@ -70,10 +60,20 @@ p {
     align-items: center;
 }
 
-#rover-photos {
-    height: 300px;
-    width: 100%;
-    object-fit: cover;
+#apod-img {
+    max-width: 100%;
+}
+
+#searchForm {
+    background-color: #646464;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#input, #searchButton {
+    padding: 0.5rem;
 }
 
 footer {
