@@ -8,36 +8,32 @@
     box-sizing: border-box;
 }
 
+/* BODY */
 body {
     min-height: 100vh;
+    background-color: #272629;
 }
 
+/* NAVBAR */
 nav {
     padding: 2rem;
     text-align: center;
     background-image: url(/assets/images/space-background.jpg);
     background-size: cover;
     background-color: #999999;
+    box-shadow: 0px 0px 50px rgb(255, 255, 255, 1.0);
 }
 
+/* HEADER */
 header {
-    background-color: #646464;
-    padding: 1rem 2rem 1rem 2rem;
+    padding: 1rem 2rem 0rem 2rem;
     text-align: center;
 }
 
-#p-header {
-    margin-bottom: 1.5rem;
-}
-
-#display-data {
-    background-color: #cccccc;
-    min-height: 100%;
-    padding: 1rem;
-}
-
+/* TEXT OCH STILAR */
 h1 {
     color: #f1f1f1;
+    text-shadow: 0px 0px 20px #000000;
     font-size: 28px;
     font-weight: 800;
     text-align: center;
@@ -53,19 +49,74 @@ h3 {
 p {
     font-weight: 300;
     font-size: 14px;
+    color: #1f1f1f;
 }
 
+#p-header {
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    background-color: rgb(241, 241, 241, 0.1);
+    border-radius: 20px;
+    color: #f1f1f1;
+}
+
+#title {
+    padding: 1rem;
+}
+
+#info {
+    padding: 0.5rem 1rem 1rem 1rem;
+    font-size: 13px;
+    color: #f1f1f1;
+
+}
+
+details {
+    background-color: #f1f1f1;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    color: #1f1f1f;
+}
+
+summary {
+    background-color: #f1f1f1;
+    font-weight: 400;
+}
+
+/* JAVASCRIPT DISPLAY-DIV */
+#display-data {
+    background-color: #343333;
+    min-height: 100%;
+    padding-bottom: 1rem;
+}
+
+/* APOD BILD */
 #apod-img {
     max-width: 100%;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+    border-top: 6px solid #f1f1f1;
+    border-bottom: 6px solid #f1f1f1;
 }
 
+#img-info {
+    display: flex;
+    justify-content: space-between;
+    color: #f1f1f1;
+    text-transform: uppercase;
+}
+
+/* FORMULÄRETS DELAR */
 #searchForm {
-    background-color: #f1f1f1;
-    padding: 2rem;
+    background-color: #272629;
+    padding: 0rem 2rem 2rem 2rem;
     text-align: center;
 }
 
-#dateSearch,
+#dateInput,
 #searchButton {
     justify-content: center;
     align-items: center;
@@ -76,26 +127,30 @@ p {
     border-radius: 1rem;
 }
 
-#dateSearch {
-    border: 2px solid black;
+#dateInput {
+    border: 2px solid #f1f1f1;
 }
 
 #searchButton {
-    border: 2px solid black;
-
+    background-image: url(/assets/images/space-background.jpg);
+    object-fit: fill;
+    border: 2px solid #f1f1f1;
+    color: #f1f1f1;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-shadow: 5px 5px 5px #000000;
 }
 
 label {
     font-weight: 600;
+    color: #f1f1f1;
 }
 
-footer {
-    /* position: fixed; */
+/* FOOTER */
+footer p {
     padding: 2rem;
-    /* left: 0;
-    bottom: 0; */
     width: 100%;
-    background-color: #646464;
+    background-color: #101010;
     color: #f1f1f1;
     text-align: center;
 }

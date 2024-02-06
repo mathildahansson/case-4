@@ -9,23 +9,29 @@
 </head>
 
 <body>
-
+    <!-- NAVBAR MED LOGO-TEXT -->
     <nav>
         <h3>NASA API</h3>
     </nav>
 
+
+    <!-- HEADER -->
     <header>
         <h1>Astronomy Picture of the Day!</h1>
-        <p id="p-header">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae modi dicta necessitatibus fugit ullam enim,
-            laborum minima suscipit amet veniam?</p>
+        <p id="p-header">
+            <strong>Welcome to this application!</strong>
+            <br>
+            In this application you can pick a specific date to get a cool
+            astronomy picture, and also get some information about it!
+        </p>
     </header>
 
 
+    <!-- FORMULÄR -->
     <form id="searchForm" onsubmit="handleSearch(event)">
-
-        <label for="dateSearch">Search for a date:</label>
+        <label for="dateInput">Search for a date:</label>
         <br>
-        <input type="text" id="dateSearch" name="dateSearch" placeholder="YYYY-MM-DD">
+        <input type="date" name="dateInput" id="dateInput">
         <br>
         <button type="submit" id="searchButton">Search!</button>
     </form>
@@ -35,10 +41,13 @@
     <div id="display-data"></div>
 
 
+    <!-- FOOTER -->
     <footer>
         <p>Copyright 2024 - Mathilda Hansson</p>
     </footer>
 
+
+    <!-- JS FIL -->
     <script src="apod.js"></script>
 </body>
 
