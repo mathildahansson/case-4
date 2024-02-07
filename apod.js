@@ -17,10 +17,10 @@ const form = document.querySelector("#searchForm");
 // Formulär-hantering
 function handleSearch(event) {
     event.preventDefault(); // Sidan ska inte laddas on
-    console.log("Is it working?");
+    // console.log("Is it working?");
 
     const dateInput = document.querySelector("#dateInput").value;
-    console.log("Valt datum:", dateInput);
+    // console.log("Valt datum:", dateInput);
     url += `&date=${dateInput}`;
 
     // Fetch
@@ -28,7 +28,7 @@ function handleSearch(event) {
         .then(response => response.json())
         .then(data => {
             const apiData = data;
-            console.log(apiData, searchString);
+            // console.log(apiData, searchString);
 
             // Visa information på sidan
             document.querySelector("#display-data").innerHTML = `

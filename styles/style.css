@@ -12,6 +12,8 @@
 body {
     min-height: 100vh;
     background-color: #272629;
+    display: flex;
+    flex-direction: column;
 }
 
 /* NAVBAR */
@@ -149,8 +151,8 @@ label {
 /* FOOTER */
 footer p {
     padding: 2rem;
-    width: 100%;
     background-color: #101010;
     color: #f1f1f1;
     text-align: center;
+    margin-top: auto;
 }
